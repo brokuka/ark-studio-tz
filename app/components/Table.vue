@@ -538,7 +538,7 @@ function handleMouseLeave(mouseEvent: MouseEvent, event: Event, timeSlot: string
         <tbody>
           <tr v-for="timeSlot in timeSlots" :key="timeSlot">
             <td
-              class="text-xs text-center sticky left-0 z-10 align-middle bg-white dark:bg-[#1b1b1d]"
+              class="text-xs text-center sticky left-0 z-2 align-middle"
               :style="{ width: `${tableScale.cellWidth}px`, height: `${tableScale.cellHeight}px` }"
             >
               {{ timeSlot }}
