@@ -1,0 +1,252 @@
+{
+  "available_days": [
+    "2025-08-10",
+    "2025-08-11",
+    "2025-08-12",
+    "2025-08-13",
+    "2025-08-14"
+  ],
+  "current_day": "2025-08-10",
+  "restaurant": {
+    "id": 11100,
+    "timezone": "Asia/Vladivostok",
+    "restaurant_name": "Супра",
+    "opening_time": "11:00",
+    "closing_time": "23:40"
+  },
+  "tables": [
+    {
+      "id": "9a4971b5-5598-4a00-8b09-a0e2573d03aa",
+      "capacity": 4,
+      "number": "51",
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "8ed4dfd6-ed9b-4230-9399-e271d2ba00d0",
+          "status": "New",
+          "start_time": "2025-08-10T12:32:47.885000+10:00",
+          "end_time": "2025-08-10T13:01:41.598000+10:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 1789,
+          "name_for_reservation": "Алина",
+          "num_people": 4,
+          "phone_number": "+79999999999",
+          "status": "Новая",
+          "seating_time": "2025-08-10T12:32:47.885000+10:00",
+          "end_time": "2025-08-10T13:01:41.598000+10:00"
+        }
+      ]
+    },
+    {
+      "id": "2b5981c6-6699-4b11-9c19-b1f3684e14bb",
+      "capacity": 2,
+      "number": "12",
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "7fc5efd5-dc8a-3130-8288-d160d1a99e91",
+          "status": "Bill",
+          "start_time": "2025-08-11T14:15:30.123000+10:00",
+          "end_time": "2025-08-11T15:45:22.456000+10:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 1790,
+          "name_for_reservation": "Максим",
+          "num_people": 2,
+          "phone_number": "+79888888888",
+          "status": "Живая очередь",
+          "seating_time": "2025-08-11T14:00:00.000000+10:00",
+          "end_time": "2025-08-11T15:30:00.000000+10:00"
+        }
+      ]
+    },
+    {
+      "id": "3c6092d7-7710-4c22-0d20-c2g4795f25cc",
+      "capacity": 6,
+      "number": "23",
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "8gd6fge6-ed9c-4231-9400-f382e3cb11e1",
+          "status": "Closed",
+          "start_time": "2025-08-12T16:20:15.789000+10:00",
+          "end_time": "2025-08-12T18:10:45.321000+10:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 1791,
+          "name_for_reservation": "Елена",
+          "num_people": 6,
+          "phone_number": "+79777777777",
+          "status": "Заявка",
+          "seating_time": "2025-08-12T16:00:00.000000+10:00",
+          "end_time": "2025-08-12T18:30:00.000000+10:00"
+        }
+      ]
+    },
+    {
+      "id": "4d7103e8-8821-4d33-1e31-d3h5806g36dd",
+      "capacity": 8,
+      "number": "34",
+      "zone": "2 этаж",
+      "orders": [
+        {
+          "id": "9he7ghf7-fe0d-4342-0511-g493f4dc22f2",
+          "status": "Banquet",
+          "start_time": "2025-08-13T19:00:00.000000+10:00",
+          "end_time": "2025-08-13T23:00:00.000000+10:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 1792,
+          "name_for_reservation": "Дмитрий",
+          "num_people": 8,
+          "phone_number": "+79666666666",
+          "status": "Открыт",
+          "seating_time": "2025-08-13T19:00:00.000000+10:00",
+          "end_time": "2025-08-13T23:00:00.000000+10:00"
+        }
+      ]
+    },
+    {
+      "id": "5e8214f9-9932-4e44-2f42-e4i6917h47ee",
+      "capacity": 10,
+      "number": "VIP-1",
+      "zone": "Банкетный зал",
+      "orders": [],
+      "reservations": [
+        {
+          "id": 1793,
+          "name_for_reservation": "Анна",
+          "num_people": 10,
+          "phone_number": "+79555555555",
+          "status": "Закрыт",
+          "seating_time": "2025-08-14T20:00:00.000000+10:00",
+          "end_time": "2025-08-14T22:30:00.000000+10:00"
+        }
+      ]
+    },
+    {
+      "id": "6f9325g0-0043-4f55-3g53-f5j7028i58ff",
+      "capacity": 4,
+      "number": "15",
+      "zone": "1 этаж",
+      "orders": [],
+      "reservations": []
+    },
+    {
+      "id": "7g0436h1-1154-4g66-4h64-g6k8139j69gg",
+      "capacity": 2,
+      "number": "7",
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "0if8ihi8-gf1e-4453-1622-h504g5ed33g3",
+          "status": "New",
+          "start_time": "2025-08-11T11:30:00.000000+10:00",
+          "end_time": "2025-08-11T12:15:00.000000+10:00"
+        },
+        {
+          "id": "1jg9jhj9-hg2f-4564-2733-i615h6fe44h4",
+          "status": "Bill",
+          "start_time": "2025-08-12T13:00:00.000000+10:00",
+          "end_time": "2025-08-12T14:30:00.000000+10:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 1794,
+          "name_for_reservation": "Сергей",
+          "num_people": 2,
+          "phone_number": "+79444444444",
+          "status": "Живая очередь",
+          "seating_time": "2025-08-11T11:30:00.000000+10:00",
+          "end_time": "2025-08-11T12:15:00.000000+10:00"
+        },
+        {
+          "id": 1795,
+          "name_for_reservation": "Мария",
+          "num_people": 2,
+          "phone_number": "+79333333333",
+          "status": "Новая",
+          "seating_time": "2025-08-12T13:00:00.000000+10:00",
+          "end_time": "2025-08-12T14:30:00.000000+10:00"
+        }
+      ]
+    },
+    {
+      "id": "8h1547i2-2265-4h77-5i75-h7l9240k70hh",
+      "capacity": 6,
+      "number": "28",
+      "zone": "2 этаж",
+      "orders": [],
+      "reservations": [
+        {
+          "id": 1796,
+          "name_for_reservation": "Владимир",
+          "num_people": 6,
+          "phone_number": "+79222222222",
+          "status": "Заявка",
+          "seating_time": "2025-08-13T17:00:00.000000+10:00",
+          "end_time": "2025-08-13T19:00:00.000000+10:00"
+        },
+        {
+          "id": 1797,
+          "name_for_reservation": "Ольга",
+          "num_people": 4,
+          "phone_number": "+79111111111",
+          "status": "Открыт",
+          "seating_time": "2025-08-14T20:00:00.000000+10:00",
+          "end_time": "2025-08-14T22:00:00.000000+10:00"
+        }
+      ]
+    },
+    {
+      "id": "9i2658j3-3376-4i88-6j86-i8m0351l81ii",
+      "capacity": 12,
+      "number": "VIP-2",
+      "zone": "Банкетный зал",
+      "orders": [
+        {
+          "id": "2kh0kjk0-ih3g-4675-3844-j726i7gf55i5",
+          "status": "Banquet",
+          "start_time": "2025-08-14T18:00:00.000000+10:00",
+          "end_time": "2025-08-14T23:30:00.000000+10:00"
+        }
+      ],
+      "reservations": []
+    },
+    {
+      "id": "0j3769k4-4487-4j99-7k97-j9n1462m92jj",
+      "capacity": 3,
+      "number": "9",
+      "zone": "1 этаж",
+      "orders": [
+        {
+          "id": "3li1lkl1-ji4h-4786-4955-k837j8hg66j6",
+          "status": "Closed",
+          "start_time": "2025-08-10T15:30:00.000000+10:00",
+          "end_time": "2025-08-10T16:45:00.000000+10:00"
+        }
+      ],
+      "reservations": [
+        {
+          "id": 1798,
+          "name_for_reservation": "Татьяна",
+          "num_people": 3,
+          "phone_number": "+79000000000",
+          "status": "Закрыт",
+          "seating_time": "2025-08-10T15:30:00.000000+10:00",
+          "end_time": "2025-08-10T16:45:00.000000+10:00"
+        }
+      ]
+    }
+  ]
+}
