@@ -20,12 +20,12 @@ function toggleDark() {
       AIRESTO | Супра
     </h2>
 
-    <div class="flex gap-2">
+    <div class="flex gap-2 items-center">
       <button
-        class="flex gap-2 rounded-[8px] p-2 border border-gray-300 dark:border-white/16 cursor-pointer opacity-75 hover:opacity-100 transition-opacity md:w-40 lg:w-56 xl:w-[258px] items-center"
+        class="flex gap-2 rounded-[8px] py-[5px] px-2 border border-gray-300 dark:border-white/16 cursor-pointer opacity-75 hover:opacity-100 transition-opacity md:w-40 lg:w-56 xl:w-[258px] items-center text-xs"
         type="button" @click="openSearchDialog"
       >
-        <Icon name="iconamoon:search" class="size-4" />
+        <IconSearch class="size-4" />
         <span class="hidden lg:inline-flex">⌘+Л поиск по имени</span>
         <span class="inline-flex lg:hidden">Поиск...</span>
       </button>
@@ -34,17 +34,14 @@ function toggleDark() {
         class="bg-gray-200 hover:bg-gray-200/70 dark:bg-white/4 rounded-sm p-1 dark:hover:bg-white/15 cursor-pointer flex justify-center items-center"
         @click="toggleDark"
       >
-        <ClientOnly>
-          <Icon v-if="color.value === 'light'" class="size-4" name="iconamoon:mode-light" />
-          <Icon v-else class="size-4" name="iconamoon:mode-dark" />
-        </ClientOnly>
+        <IconSun class="size-4" />
       </button>
 
       <button
         class="bg-gray-200 hover:bg-gray-200/70 dark:bg-white/4 rounded-sm py-1 px-1.5 dark:hover:bg-white/15 cursor-pointer flex gap-1 items-center"
       >
-        <Icon class="size-4" name="iconamoon:exit" />
-        <span class="text-xs ">Выйти</span>
+        <IconExit class="size-4" />
+        <span class="text-xs">Выйти</span>
       </button>
     </div>
   </header>

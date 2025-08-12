@@ -201,14 +201,14 @@ watch(() => props.initialScale, (newScale) => {
           class="rounded-sm bg-gray-200 hover:bg-gray-200/70 dark:bg-white/4 dark:hover:bg-white/15 hover:cursor-pointer transition-all duration-200 active:scale-95 relative group flex justify-center items-center  p-1"
           title="Уменьшить масштаб (клавиша -)" @click="onClickMinusButton" @mousedown.stop @touchstart.stop
         >
-          <Icon name="iconamoon:sign-minus" class="dark:text-white" />
+          <IconMinus class="size-4" />
         </button>
 
         <button
           class="rounded-sm bg-gray-200 dark:bg-white/4 hover:bg-gray-200/70 dark:hover:bg-white/15 hover:cursor-pointer transition-all duration-200 active:scale-95 relative group flex justify-center items-center p-1"
           title="Увеличить масштаб (клавиша +)" @click="onClickPlusButton" @mousedown.stop @touchstart.stop
         >
-          <Icon name="iconamoon:sign-plus" class="dark:text-white" />
+          <IconPlus class="size-4" />
         </button>
       </div>
 

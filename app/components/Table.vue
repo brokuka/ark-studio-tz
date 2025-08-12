@@ -288,7 +288,7 @@ function calculateOverlappingPosition(event: Event, timeSlot: string, table: Tab
 }
 
 function shouldExpandOnHover(event: Event, timeSlot: string, table: Table): boolean {
-  return getSameTimeEventGroup(event, timeSlot, table).length > 1 || hasOverlappingEvents(event, timeSlot, table)
+  return !!getSameTimeEventGroup(event, timeSlot, table).length || hasOverlappingEvents(event, timeSlot, table)
 }
 
 function calculateRequiredWidth(event: Event): number {
@@ -501,15 +501,12 @@ function handleMouseLeave(mouseEvent: MouseEvent, event: Event, timeSlot: string
 </script>
 
 <template>
-  <div
-    class="overflow-hidden h-full w-full dark:text-white relative table-container"
-    :class="{ 'pointer-events-none': !jsLoaded }"
-  >
+  <div class="overflow-hidden w-full dark:text-white relative h-[750px]" :class="{ 'pointer-events-none': !jsLoaded }">
     <TableScale :initial-scale="tableScale" @scale-change="handleScaleChange" />
 
     <div class="overflow-x-auto overflow-y-auto h-full table-scroll-container scroll-">
       <table class="border-separate border-spacing-0 min-w-max">
-        <thead class="sticky top-0 z-[300] bg-white dark:bg-gray-900">
+        <thead class="sticky top-0 z-40 bg-white dark:bg-[#1b1b1d]">
           <tr class="text-xs">
             <th
               class="sticky left-0 z-40"
@@ -517,7 +514,7 @@ function handleMouseLeave(mouseEvent: MouseEvent, event: Event, timeSlot: string
             />
             <th
               v-for="table in tables" :key="table.id"
-              class="text-black/64 dark:text-white/64 border-l-0 border-b border-black/16 dark:border-white/16 p-2 flex-shrink-0 overflow-hidden bg-white dark:bg-gray-900"
+              class="text-black/64 dark:text-white/64 border-l-0 border-b border-black/16 dark:border-white/16 p-2 flex-shrink-0 overflow-hidden bg-white dark:bg-[#1b1b1d]"
               :style="{
                 width: `${tableScale.cellWidth}px`,
                 height: `${tableScale.cellHeight}px`,
@@ -525,11 +522,11 @@ function handleMouseLeave(mouseEvent: MouseEvent, event: Event, timeSlot: string
                 maxWidth: `${tableScale.cellWidth}px`,
               }"
             >
-              <div class="flex gap-1 items-center justify-center whitespace-nowrap text-ellipsis overflow-hidden">
+              <div class="flex gap-1 items-center justify-center">
                 <span>#</span><span class="font-semibold text-[13px]">{{ table.number }}</span>
-                <span class="whitespace-nowrap text-ellipsis overflow-hidden">{{ table.capacity }} чел</span>
+                <span>{{ table.capacity }} чел</span>
               </div>
-              <div class="text-gray-400 whitespace-nowrap text-ellipsis overflow-hidden">
+              <div class="text-gray-400">
                 {{ table.zone }}
               </div>
             </th>
@@ -538,7 +535,7 @@ function handleMouseLeave(mouseEvent: MouseEvent, event: Event, timeSlot: string
         <tbody>
           <tr v-for="timeSlot in timeSlots" :key="timeSlot">
             <td
-              class="text-xs text-center sticky left-0 z-10 align-middle bg-white dark:bg-gray-900"
+              class="text-xs text-center sticky left-0 z-10 align-middle bg-white dark:bg-[#1b1b1d]"
               :style="{ width: `${tableScale.cellWidth}px`, height: `${tableScale.cellHeight}px` }"
             >
               {{ timeSlot }}
@@ -575,38 +572,3 @@ function handleMouseLeave(mouseEvent: MouseEvent, event: Event, timeSlot: string
     </div>
   </div>
 </template>
-
-<style scoped>
-.table-container {
-  position: relative;
-  width: 100%;
-  height: 750px;
-  overflow: hidden;
-}
-
-.table-scroll-container {
-  position: relative;
-  overflow-x: auto;
-  overflow-y: auto;
-}
-
-thead.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-}
-
-th.sticky {
-  position: sticky;
-  left: 0;
-  z-index: 40;
-}
-
-td.sticky {
-  position: sticky;
-  left: 0;
-  z-index: 10;
-  background: inherit;
-  /* Ensure background consistency */
-}
-</style>
