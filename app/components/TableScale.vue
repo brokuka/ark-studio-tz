@@ -179,7 +179,7 @@ watch(() => props.initialScale, (newScale) => {
 
 <template>
   <div
-    class="z-30 select-none fixed" :class="{
+    class="z-[41] select-none fixed" :class="{
       'cursor-grabbing': draggableState.isDragging,
       'cursor-grab': !draggableState.isDragging,
       'pointer-events-none': !jsLoaded,

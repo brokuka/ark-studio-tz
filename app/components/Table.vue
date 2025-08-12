@@ -501,10 +501,13 @@ function handleMouseLeave(mouseEvent: MouseEvent, event: Event, timeSlot: string
 </script>
 
 <template>
-  <div class="overflow-hidden w-full dark:text-white relative h-[750px]" :class="{ 'pointer-events-none': !jsLoaded }">
+  <div
+    class="overflow-hidden h-full w-full dark:text-white relative table-container"
+    :class="{ 'pointer-events-none': !jsLoaded }"
+  >
     <TableScale :initial-scale="tableScale" @scale-change="handleScaleChange" />
 
-    <div class="overflow-x-auto overflow-y-auto h-full table-scroll-container scroll-">
+    <div class="overflow-x-auto overflow-y-auto h-full">
       <table class="border-separate border-spacing-0 min-w-max">
         <thead class="sticky top-0 z-40 bg-white dark:bg-[#1b1b1d]">
           <tr class="text-xs">
