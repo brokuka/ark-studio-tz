@@ -1,10 +1,14 @@
-# Nuxt Minimal Starter
+# Ark Studio | Техническое задание
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+> [!NOTE]
+> Дедлайн 7 дней от начала разработки
 
-Make sure to install dependencies:
+Описание задания - https://wiki.ark.software/s/563efba2-4592-4ec5-b862-09c78cf0e2f8
+
+## Установка
+
+Убедитесь что установили все зависимости
 
 ```bash
 # npm
@@ -20,9 +24,9 @@ yarn install
 bun install
 ```
 
-## Development Server
+## Запуск по локали
 
-Start the development server on `http://localhost:3000`:
+Локальный сервер по умолчанию запуститься и будет доступен по `http://localhost:3000`:
 
 ```bash
 # npm
@@ -38,9 +42,9 @@ yarn dev
 bun run dev
 ```
 
-## Production
+## Продакшен
 
-Build the application for production:
+Сборка проекта
 
 ```bash
 # npm
@@ -56,7 +60,7 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
+Чтобы запустить локально продакшен сборку:
 
 ```bash
 # npm
@@ -71,5 +75,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
