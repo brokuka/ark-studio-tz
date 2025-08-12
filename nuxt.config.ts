@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     'shadcn-nuxt',
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
-    '@nuxt/icon',
   ],
   devtools: { enabled: true },
 
@@ -34,10 +33,5 @@ export default defineNuxtConfig({
         sortConfigKeys: true,
       },
     },
-  },
-
-  icon: {
-    mode: 'css',
-    cssLayer: 'base',
   },
 })

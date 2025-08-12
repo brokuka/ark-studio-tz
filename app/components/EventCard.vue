@@ -98,7 +98,9 @@ function getStatusColor(status: string) {
           {{ status }}
         </span>
 
-        <span v-if="phone" class="text-[0.6rem] mt-0.5">{{ phone }}</span>
+        <span v-if="phone" class="text-[0.6rem] mt-0.5 flex items-center">
+          <IconPhone class="size-3 shrink-0" /> {{ phone }}
+        </span>
 
         <time :datetime="time" class="text-[0.6rem] mt-auto text-left">{{ formatTimeRange(time) }}</time>
       </template>
